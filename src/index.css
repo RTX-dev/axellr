@@ -1977,3 +1977,176 @@ body::before {
 
 /* ── Sélection ── */
 ::selection { background: rgba(247, 103, 14, 0.25); }
+
+/* ═══════════════════════════════════════════════════════════════
+   MODE CLAIR/SOMBRE + POLICE PIXEL RÉTRO
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Police pixelisée ── */
+:root {
+  --font-pixel: 'Press Start 2P', 'VT323', monospace;
+}
+
+/* Fond par défaut = sombre (thème actuel Mistral clair devient le mode clair) */
+
+/* ── MODE SOMBRE : crème inversé → encre profonde ── */
+[data-theme="dark"] {
+  --bg:         #16130f;
+  --surface:    #201c17;
+  --elevated:   #2a251e;
+  --border:     rgba(255, 244, 230, 0.10);
+  --border-h:   rgba(255, 244, 230, 0.20);
+  --text:       #f4ede2;
+  --muted:      #b8afa3;
+  --dim:        #6e675c;
+  --accent:     #ffa552;
+  --accent2:    #7dd87d;
+}
+
+[data-theme="dark"] body::before {
+  background-image: radial-gradient(circle, rgba(255, 244, 230, 0.05) 1px, transparent 1px);
+}
+
+[data-theme="dark"] .cursor-glow {
+  background: radial-gradient(circle, rgba(255, 165, 82, 0.09) 0%, transparent 65%);
+}
+
+/* ── Application police pixelisée ── */
+body, button, input, textarea, select {
+  font-family: var(--font-pixel) !important;
+}
+
+.mono, .win-title, .sk-tree, .cf-label, .ci-val,
+.cert-date, .cert-num, .gl-total, .gl-day-labels, .gl-months,
+.kb-hint, .hero-sub, .xp-date, .xp-company, .e5-badge, .e5-card-num,
+.e5-card-proj, .e5-doc-meta, .cert-group-sub, .cert-lb-title,
+.proof-tag, .tags span, .legal-block li span, .hero-name {
+  font-family: var(--font-pixel) !important;
+}
+
+/* Press Start 2P est large — on réduite les tailles */
+body { font-size: 13px; line-height: 1.7; }
+
+.hero-name {
+  font-size: clamp(1.4rem, 3.4vw, 2.6rem) !important;
+  letter-spacing: 0.02em;
+}
+
+.hero-sub { font-size: 0.7rem !important; letter-spacing: 0.08em; }
+
+.win-title { font-size: 11px !important; }
+.kb-hint { font-size: 11px; }
+
+.app-btn { font-size: 12px !important; }
+
+.about-info h2 { font-size: 14px !important; }
+.about-role { font-size: 12px !important; }
+.about-bio p { font-size: 12px !important; line-height: 1.8; }
+
+.badge { font-size: 10px !important; }
+.alink { font-size: 11px !important; }
+
+.project-top h3 { font-size: 13px !important; }
+.project-card > p { font-size: 11px !important; line-height: 1.7; }
+.tags span { font-size: 9px !important; }
+.cmd-open-btn { font-size: 11px !important; }
+
+.sk-tree { font-size: 11px !important; line-height: 1.9; }
+.sk-header { font-size: 12px !important; }
+
+.ci-label { font-size: 9px !important; }
+.ci-val { font-size: 11px !important; }
+.cf-label { font-size: 10px !important; }
+.cf-input, .cf-textarea { font-size: 11px !important; }
+.cf-submit { font-size: 11px !important; }
+
+.xp-item h3, .xp-content h3 { font-size: 13px !important; }
+.xp-company { font-size: 11px !important; }
+.xp-desc { font-size: 11px !important; line-height: 1.7; }
+.xp-date { font-size: 10px !important; }
+
+.e5-title { font-size: 16px !important; }
+.e5-sub { font-size: 11px !important; line-height: 1.7; }
+.e5-section-title { font-size: 11px !important; }
+.e5-doc-name { font-size: 12px !important; }
+.e5-doc-meta { font-size: 10px !important; }
+.e5-card-title { font-size: 11px !important; }
+.e5-card-num { font-size: 12px !important; }
+.e5-card-proj { font-size: 10px !important; }
+
+.proof-desc { font-size: 11px !important; line-height: 1.7; }
+.proof-tag { font-size: 9px !important; }
+
+.cert-group-name { font-size: 13px !important; }
+.cert-group-sub { font-size: 11px !important; }
+.cert-title { font-size: 11px !important; }
+.cert-date { font-size: 10px !important; }
+.cert-lb-title { font-size: 11px !important; }
+
+.legal-section > h2 { font-size: 12px !important; }
+.legal-block h3 { font-size: 12px !important; }
+.legal-block p { font-size: 11px !important; line-height: 1.7; }
+.legal-block li { font-size: 11px !important; }
+.legal-block li span { font-size: 10px !important; }
+
+.legal-link { font-size: 11px !important; }
+
+.gl-title { font-size: 12px !important; }
+.gl-total { font-size: 10px !important; }
+
+.win-controls button { font-size: 13px; }
+
+/* ── Bouton theme toggle ── */
+.theme-toggle {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s, transform 0.15s;
+  pointer-events: all;
+  flex-shrink: 0;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  image-rendering: pixelated;
+  shape-rendering: crispEdges;
+}
+
+.theme-toggle:hover {
+  border-color: rgba(247, 103, 14, 0.5);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Espacement footer avec le toggle */
+.desktop-footer { gap: 14px; flex-wrap: wrap; }
+
+/* Scrollbar pixel */
+.win-body::-webkit-scrollbar-thumb { border-radius: 0; }
+.gl-cell { border-radius: 0 !important; }
+.window { border-radius: 4px !important; }
+.titlebar { border-radius: 0; }
+.avatar { border-radius: 4px; }
+.app-btn { border-radius: 4px !important; }
+.badge { border-radius: 0; }
+.tags span { border-radius: 0; }
+.alink { border-radius: 0; }
+.project-card { border-radius: 4px; }
+.contact-item { border-radius: 4px; }
+.ci-icon { border-radius: 4px; }
+.cf-input, .cf-textarea { border-radius: 4px; }
+.cf-submit { border-radius: 4px; }
+.cmd-open-btn { border-radius: 4px; }
+.e5-doc-card, .e5-comp-card { border-radius: 4px; }
+.e5-doc-icon, .e5-card-icon { border-radius: 4px; }
+.legal-link { border-radius: 4px; }
+.theme-toggle { border-radius: 4px; }

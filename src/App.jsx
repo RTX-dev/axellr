@@ -8,10 +8,8 @@ import ProjectsWindow from './components/windows/ProjectsWindow'
 import SkillsWindow from './components/windows/SkillsWindow'
 import ExperienceWindow from './components/windows/ExperienceWindow'
 import ContactWindow from './components/windows/ContactWindow'
-import E5Window from './components/windows/E5Window'
 import DiscordCmdsWindow from './components/windows/DiscordCmdsWindow'
 import CertificationsWindow from './components/windows/CertificationsWindow'
-import E5ProofWindow from './components/windows/E5ProofWindow'
 import LegalWindow from './components/windows/LegalWindow'
 
 export default function App() {
@@ -45,10 +43,6 @@ export default function App() {
         <ContactWindow />
       </Window>
 
-      <Window id="e5" title="E5.pdf — Épreuve BTS SIO" width="740px" height="820px">
-        <E5Window />
-      </Window>
-
       <Window id="certifications" title="certifs/" width="660px" height="620px">
         <CertificationsWindow />
       </Window>
@@ -61,12 +55,6 @@ export default function App() {
         <LegalWindow />
       </Window>
 
-      <E5ProofWindow id="e5-c1" />
-      <E5ProofWindow id="e5-c2" />
-      <E5ProofWindow id="e5-c3" />
-      <E5ProofWindow id="e5-c4" />
-      <E5ProofWindow id="e5-c5" />
-      <E5ProofWindow id="e5-c6" />
     </>
   )
 }
