@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import WindowManager from './windowManager'
 import Desktop from './components/Desktop'
-import ParticlesBg from './components/ParticlesBg'
+import PixelSkyBg from './components/PixelSkyBg'
 import Window from './components/Window'
 import AboutWindow from './components/windows/AboutWindow'
 import ProjectsWindow from './components/windows/ProjectsWindow'
@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <>
-      <ParticlesBg />
+      <PixelSkyBg />
       <div className="cursor-glow" />
       <Desktop />
 
