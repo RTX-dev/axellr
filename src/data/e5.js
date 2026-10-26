@@ -1,0 +1,96 @@
+export const E5_PROOFS = {
+    'e5-c1': {
+        winTitle: 'preuves — 01 · patrimoine informatique',
+        desc: "Création de mon portfolio pour démontrer mes compétences en dev et présenter mes projets + Application de gestion de produits médicaux + Mise en place de GPO",
+        tags: ['Portfolio', 'Mise en production'],
+        images: [{label: 'portfolio', src: '/website_me.png'},
+                 {label: 'gpopdf', src: '/GPO.pdf'},],
+    },
+    'e5-c2': {
+        winTitle: 'preuves — 02 · incidents & assistance',
+        desc: "Assistance niveau 1 auprès des utilisateurs durant mes stages. + Inventaire des consommables +  Conception et développement d'une application de suivi sportif avec gestion des programmes.",
+        tags: ['Inventaire + tickets GLPI / App cloud', 'Support niveau 1 / développement avec suivi'],
+        images: [{label: 'Ticket GLPI', src: '/nacc_pic.png'},
+            {label: 'Inventaire consommable', src: '/inventairenacc.png'},
+            {label: 'appnatation', src: '/deepblue.png'}],
+    },
+    'e5-c3': {
+        winTitle: 'preuves — 03 · présence en ligne',
+        desc: "Débogage d'un site web (div mal fermée, erreur de chemin d'image, etc.). Mise en place d'une page vitrine pour l'entreprise Lery Technologie dans le but de promouvoir une application.",
+        tags: ['Débogage site web / Création page vitrine', 'Développement / Application Laravel'],
+        images: [
+            {label: 'Site W4ES', src: '/site_debug.png'},
+            {label: 'Page vitrine Bixy', src: '/lerycc_acceuil.png'},
+            {label: 'Politique de confidentialité Bixy', src: '/conf_lerycc.png'},
+        ],
+    },
+    'e5-c4': {
+        winTitle: 'preuves — 04 · mode projet',
+        desc: "Logiciel gérant les bons de commandes d'envoi pour un hôpital. + Mise en place GPO",
+        tags: ['Mode projet', 'Logiciel de gestion'],
+        images: [{label: 'Capture projet', src: '/epito1.png'},
+            {label: 'Capture projet 2', src: '/epito2.png'}],
+    },
+    'e5-c5': {
+        winTitle: 'preuves — 05 · service informatique',
+        desc: "Lery Technologie (stage) formulaire de contact + création d'agent IA personnalisé + GPO",
+        tags: ['Service IT', 'Application'],
+        images: [{label: 'Capture projet', src: '/epito1.png'},
+            {label: 'Capture projet 2', src: '/epito2.png'},
+            {label: 'codeollama', src: '/iaollamacode.png'},
+            {label: 'cam', src: '/cam.png'},],
+    },
+    'e5-c6': {
+        winTitle: 'preuves — 06 · développement professionnel',
+        desc: "Pour avoir une meilleure visibilité professionnelle, j'ai créé un portfolio (axellr.com) et un profil LinkedIn. + outils de veille technologique",
+        tags: ['Portfolio', 'LinkedIn'],
+        images: [{label: 'Profil LinkedIn', src: '/linkedin_pic.png'},
+            {label: 'veilletechno', src: '/async.png'},
+            {label: 'website', src: '/website_me.png'},],
+    },
+}
+
+export const E5_COMPETENCIES = [
+    {
+        id: 'e5-c1',
+        num: '01',
+        title: 'Gérer le patrimoine informatique',
+        project: 'Inventaire / Parc informatique',
+        icon: 'database',
+    },
+    {
+        id: 'e5-c2',
+        num: '02',
+        title: "Répondre aux incidents et aux demandes d'assistance et d'évolution",
+        project: 'Support niveau 1 / développement avec suivi',
+        icon: 'globe',
+    },
+    {
+        id: 'e5-c3',
+        num: '03',
+        title: "Développer la présence en ligne de l'organisation",
+        project: 'Débogage / Page vitrine Bixy',
+        icon: 'code',
+    },
+    {
+        id: 'e5-c4',
+        num: '04',
+        title: 'Travailler en mode projet',
+        project: 'Logiciel de gestion',
+        icon: 'file',
+    },
+    {
+        id: 'e5-c5',
+        num: '05',
+        title: "Mettre à disposition des utilisateurs un service informatique",
+        project: 'Application / Service IT',
+        icon: 'database',
+    },
+    {
+        id: 'e5-c6',
+        num: '06',
+        title: 'Organiser son développement professionnel',
+        project: 'Portfolio / LinkedIn',
+        icon: 'globe',
+    },
+]
